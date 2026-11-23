@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>808a10f1 - Edit Automobile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Car Inventory</a>
+      <nav aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Vehicles</a>
+        <a class="nav-link" href="add.html">Add vehicle</a>
+        <a class="nav-link" href="login.html">Please log in</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container narrow">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">Update record</p>
+        <h1>Edit Automobile</h1>
+      </div>
+    </section>
+
+    <div id="message" class="alert" role="alert" hidden></div>
+    <form id="vehicle-form" class="card form-card">
+      <div class="field">
+        <label for="make">Make</label>
+        <input id="make" name="make" required maxlength="40">
+      </div>
+      <div class="field">
+        <label for="model">Model</label>
+        <input id="model" name="model" required maxlength="60">
+      </div>
+      <div class="field">
+        <label for="year">Year</label>
+        <input id="year" name="year" type="number" required min="1886" max="2100">
+      </div>
+      <div class="field">
+        <label for="mileage">Mileage</label>
+        <input id="mileage" name="mileage" type="number" required min="0" max="10000000">
+      </div>
+      <div class="form-actions">
+        <button class="button" type="submit">Save changes</button>
+        <a class="button secondary" href="index.html">Cancel</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

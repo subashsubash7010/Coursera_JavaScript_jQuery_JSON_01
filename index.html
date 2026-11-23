@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>808a10f1 - Automobile Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="index.html">Car Inventory</a>
+      <nav aria-label="Primary navigation">
+        <a class="nav-link" href="index.html">Vehicles</a>
+        <a class="nav-link" href="add.html">Add vehicle</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="page-heading">
+      <div>
+        <p class="eyebrow">Fleet manager</p>
+        <h1>Automobiles</h1>
+      </div>
+      <a class="button" href="add.html">+ Add vehicle</a>
+    </section>
+
+    <div id="message" class="alert" role="status" aria-live="polite" hidden></div>
+
+    <section class="card" aria-label="Automobile inventory">
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Make</th>
+              <th>Model</th>
+              <th>Year</th>
+              <th>Mileage</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="vehicle-table"></tbody>
+        </table>
+      </div>
+      <p id="empty-state" class="empty-state" hidden>No automobiles have been added yet.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
